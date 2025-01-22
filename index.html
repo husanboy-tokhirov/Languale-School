@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="./images/logo.svg">
+    <link rel="stylesheet" href="./css/main.css">
+    <title>Language School</title>
+    <style type="text/tailwindcss">
+        @layer utilities {
+          .content-auto {
+            content-visibility: auto;
+          }
+        }
+    </style>
+</head>
+<body>
+    <header class="bg-[#5855E7] py-[9px] sm:py-4">
+        <div class="px-5 xl:px-0 containers flex items-center justify-between">
+            <a href="/">
+                <img class="w-[80px] h-[57px] sm:w-[156px] sm:h-[111px]" src="./images/logo.svg" alt="Site Logo" width="156" height="111">
+            </a>
+            <nav class="hidden xl:flex items-center gap-[42px]">
+                <a class="border-b-[2px] border-transparent hover:border-white duration-300  font-medium text-[24px] text-white leading-[29.11px]" href="#">О нашей школе</a>
+                <a class="border-b-[2px] border-transparent hover:border-white duration-300 font-medium text-[24px] text-white leading-[29.11px]" href="#">Преимущества</a>
+                <a class="border-b-[2px] border-transparent hover:border-white duration-300 font-medium text-[24px] text-white leading-[29.11px]" href="#">Классы</a>
+                <a class="border-b-[2px] border-transparent hover:border-white duration-300 font-medium text-[24px] text-white leading-[29.11px]" href="#">Контакты</a>
+            </nav>
+            <div class="flex items-center gap-5">
+                <a class="hidden sm:block hover:bg-transparent border-[2px] border-transparent hover:border-white hover:text-white duration-300 py-[11px] px-[35px] bg-white rounded-[5px] text-[24px] leading-[28.13px] font-medium" href="#">Связаться с нами</a>
+                <button class="sm:hidden">
+                    <img src="./images/phone.svg" alt="Phone img" width="30" height="30">
+                </button>
+                <button class="xl:hidden">
+                    <img src="./images/hamburger.svg" alt="hamburger img" width="30" height="30">
+                </button>
+            </div>
+        </div>
+    </header>
+    <main>
+        <section class="hero-section pt-[329px] sm:pt-[589px] lg:pt-[180px] pb-[65px] sm:pb-[140px]">
+            <div class="containers">
+                <div class="lg:w-[568px] text-center lg:text-start pt-10 sm:pb-12 bg-white lg:bg-transparent">
+                    <h1 class="mb-[20px] font-bold text-[18px] sm:text-[40px] leading-[22.28px] sm:leading-[49.52px]"><span class="text-[#4567ed]">The Best Future Stars</span> - мы заботимся о будущем вашего ребенка</h1>
+                    <p class="font-normal text-[18px] leading-[18.75px] mb-[30px]">Наши опытные преподователи сделают процесс обучения максимально интересным и эффективным для вашего ребенка </p>
+                    <div class="flex items-center justify-center lg:justify-start gap-[24px] sm:gap-10">
+                        <a class="px-[19px] sm:px-[32px] pt-[9px] sm:pt-[5px] pb-[15px] sm:pb-[10px] border-[3px] border-transparent bg-[#6347EB] rounded-[10px] text-white text-[16px] sm:text-[32px] leading-[17.15px] sm:leading-[37.5px]" href="#">Позвонить </a>
+                        <a class="px-[19px] sm:px-[32px] pt-[9px] sm:pt-[5px] pb-[15px] sm:pb-[10px] border-[3px] border-[#6347EB] rounded-[10px] text-[16px] sm:text-[32px] leading-[17.15px] sm:leading-[37.5px]" href="#">Подробнее  </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+          theme: {
+            extend: {
+              colors: {
+                clifford: '#da373d',
+              }
+            }
+          }
+        }
+    </script>
+</body>
+</html>
